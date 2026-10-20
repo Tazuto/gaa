@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS registro_web
+CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE registro_web;
+
+CREATE TABLE IF NOT EXISTS acceso (
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    ip VARCHAR(45) NOT NULL,
+    fecha_hora DATETIME NOT NULL,
+    version_servidor VARCHAR(100) NOT NULL
+);
